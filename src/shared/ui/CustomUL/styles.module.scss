@@ -1,0 +1,19 @@
+@use '@app/styles/variables' as v;
+
+.custom_ul {
+    margin-top: v.$spacing-md;
+    display: flex;
+    list-style-type: none;
+    min-width: 100%;
+    justify-content: space-around;
+    user-select: none; /* Отключает выделение текста */
+    cursor: default;
+
+    &__column {
+        flex-direction: column;
+    }
+
+    &__row {
+        flex-direction: row;
+    }
+}

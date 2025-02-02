@@ -1,0 +1,48 @@
+@use '@app/styles/variables' as v;
+@use '@app/styles/mixins' as m;
+
+.logo_container {
+    display: flex;
+    min-height: 200px;
+    min-width: 400px;
+    justify-content: space-around;
+    color: v.$link-color;
+    user-select: none;
+}
+
+.app_logo {
+    height: 10em;
+    width: 15em;
+    padding: 1em;
+    will-change: filter;
+    transition: filter 300ms;
+    &:hover {
+        filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+}
+
+.aboutText {
+    margin: 0px;
+}
+
+.welcome_page {
+    @include m.flex-center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: v.$spacing-xl;
+    text-align: center;
+
+    h1 {
+        margin-bottom: v.$spacing-lg;
+    }
+}
+
+.readTheDocs {
+    @include m.body-text;
+    color: #888;
+    margin-top: v.$spacing-lg;
+
+    @include m.mobile {
+        margin-top: v.$spacing-md;
+    }
+}

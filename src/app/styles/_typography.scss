@@ -1,0 +1,26 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// Typography styles
+h1 {
+    font-size: v.$heading-size;
+    line-height: v.$heading-line-height;
+}
+
+h2,
+.h2 {
+    @include m.heading-2;
+}
+
+p {
+    @include m.body-text;
+    margin-bottom: v.$spacing-md;
+}
+
+.text-primary {
+    color: v.$primary-color;
+}
+
+.text-secondary {
+    color: v.$secondary-color;
+}

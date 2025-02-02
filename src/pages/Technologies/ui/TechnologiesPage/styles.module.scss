@@ -1,0 +1,12 @@
+@use '@app/styles/variables' as v;
+@use '@app/styles/mixins' as m;
+
+.readTheDocs {
+    @include m.body-text;
+    color: #888;
+    margin-top: v.$spacing-lg;
+
+    @include m.mobile {
+        margin-top: v.$spacing-md;
+    }
+}

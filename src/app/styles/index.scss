@@ -1,0 +1,11 @@
+// Global styles and variables
+@use 'variables';
+@use 'mixins';
+@use 'reset';
+@use 'typography';
+
+#root {
+    max-width: 3840px;
+    margin: 0;
+    padding: 0;
+}

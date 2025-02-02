@@ -1,0 +1,21 @@
+@use '@app/styles/variables' as v;
+@use '@app/styles/mixins' as m;
+
+.card_text {
+    padding: 2em;
+    border-radius: 8px;
+    // background-color: rgba(v.$secondary-color, 0.05);
+    margin-bottom: v.$spacing-lg;
+    max-width: 1000px;
+    width: 100%;
+
+    p {
+        @include m.body-text;
+        margin-bottom: 0;
+    }
+
+    @include m.mobile {
+        padding: v.$spacing-md;
+        margin: v.$spacing-md;
+    }
+}

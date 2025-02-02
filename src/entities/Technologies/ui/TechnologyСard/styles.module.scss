@@ -1,0 +1,9 @@
+li {
+    &:hover {
+        filter: drop-shadow(0 0 2em #61dafbaa);
+    }
+}
+
+.text {
+    font-size: 1.2rem;
+}
