@@ -15,11 +15,6 @@ export const technologiesData: ITechnology[] = [
         linkDoc: 'https://reactrouter.com/en/main',
     },
     {
-        name: 'Feature-Sliced Design',
-        logo: fsdLogo,
-        linkDoc: 'https://feature-sliced.design/',
-    },
-    {
         name: 'Vite',
         logo: viteLogo,
         linkDoc: 'https://vite.dev/',
@@ -38,6 +33,11 @@ export const technologiesData: ITechnology[] = [
         name: 'Scss',
         logo: scssLogo,
         linkDoc: 'https://sass-lang.com/documentation/',
+    },
+    {
+        name: 'Feature-Sliced Design',
+        logo: fsdLogo,
+        linkDoc: 'https://feature-sliced.design/',
     },
     {
         name: 'React Router',

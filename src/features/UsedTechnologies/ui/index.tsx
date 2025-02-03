@@ -7,7 +7,7 @@ import {
 import styles from './styles.module.scss';
 
 export const UsedTechnologies = () => {
-    const technologies = useTechData('remaining');
+    const technologies = useTechData('all');
 
     return (
         <CustomUL variant={'row'}>

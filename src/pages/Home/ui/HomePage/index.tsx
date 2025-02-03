@@ -1,17 +1,18 @@
 import { PageContainer, HeadingText, CustomText, TextCard } from '@shared/ui';
-import { RoutingAndStoreDemo } from '@widgets/RoutingAndStoreDemo';
 import styles from './styles.module.scss';
 import { UsedTechnologies } from '@features/UsedTechnologies';
 
-export const TechnologiesPage = () => {
+export const HomePage = () => {
     return (
         <PageContainer>
-            <HeadingText>Technologies page</HeadingText>
-            <RoutingAndStoreDemo />
-
+            <HeadingText>Start of Eatly-Shop project</HeadingText>
+            
             <TextCard>
-                <CustomText>
-                    The following technologies are also used in this template:
+                <CustomText style={styles.techText}>
+                Eatly is a food delivery service
+                </CustomText>
+                <CustomText >
+                    The following technologies are also used in this project:
                 </CustomText>
                 <UsedTechnologies />
                 <CustomText style={styles.readTheDocs}>
