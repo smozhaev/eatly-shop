@@ -1,0 +1,31 @@
+@use '@app/styles/typography';
+@use '@app/styles/variables' as v;
+
+.navigation {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 738px;
+
+    &__list {
+        width: 374px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__link {
+        margin-right: 54px;
+        &_active {
+            color: v.$link-hover;
+        }
+    }
+}

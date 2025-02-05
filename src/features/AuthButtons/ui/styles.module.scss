@@ -1,0 +1,26 @@
+@use '@app/styles/variables.scss' as v;
+
+.auth_buttons__container {
+    display: flex;
+    align-items: center;
+}
+
+.button_login {
+    background-color: v.$dark-white;
+    color: #606060;
+    margin-right: 8px;
+    border: v.$dark-white 1px solid;
+
+    &:hover {
+        border: v.$purple-light 1px solid;
+    }
+}
+
+.button_profile__icon {
+    height: 35px;
+}
+
+.button_profile {
+    padding: 8px 14px;
+    border-radius: 16px;
+}
