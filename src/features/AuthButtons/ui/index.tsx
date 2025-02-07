@@ -1,6 +1,6 @@
 import { ReusableButton, CustomIcon } from '@shared/ui';
 import styles from './styles.module.scss';
-import userIcon from '@shared/assets/user-l.svg';
+import userIcon from '@shared/assets/svg/user-l.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 

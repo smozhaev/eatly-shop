@@ -42,3 +42,18 @@ a {
         color: v.$link-hover;
     }
 }
+
+button {
+    user-select: none;
+    cursor: default;
+}
+
+::selection {
+    background-color: v.$purple-light;
+    color: v.$dark-white;
+}
+
+:focus-visible {
+    outline: 2px solid v.$purple-light;
+    outline-offset: 4px;
+}

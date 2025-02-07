@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import { Link } from 'react-router';
-import fullLogo from '@shared/assets/full-logo.svg';
+import fullLogo from '@shared/assets/svg/full-logo.svg';
 
 export const AppLogo = () => {
     return (

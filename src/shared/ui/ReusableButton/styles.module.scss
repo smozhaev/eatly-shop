@@ -7,8 +7,6 @@
     background-color: v.$purple-light;
     color: v.$dark-white;
     transition: all 0.7s ease;
-    user-select: none;
-    cursor: default;
 
     &:hover {
         transition: all 0.4s ease;
