@@ -1,0 +1,1 @@
+export { LikeProduct } from './ui/'

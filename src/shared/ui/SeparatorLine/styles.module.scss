@@ -1,6 +1,7 @@
 @use '@app/styles/variables' as v;
 
 .separator_line {
+    width: 100%;
     border: none;
     height: 2px;
     background-color: v.$light-grey;

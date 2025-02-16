@@ -2,8 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss';
 import { ReusableButton } from '@shared/ui';
 import trustpilot from '@shared/assets/svg/trustpilot.svg';
-import star from '@shared/assets/svg/star.svg';
-import heroFoodImage from '@shared/assets/png/food-image.png';
+import star from '@shared/assets/svg/star-y.svg';
+import heroFoodImage from '@shared/assets/png/food-image-hero.png';
 
 export const HeroSection = () => {
     const navigate = useNavigate();

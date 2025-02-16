@@ -9,6 +9,7 @@
     height: 741px;
     width: 1248px;
     padding: 49px 0px 85px 0px;
+    margin-bottom: 88px;
 
     &__container {
         display: flex;
@@ -147,13 +148,4 @@
         user-select: none;
         cursor: default;
     }
-}
-
-.stats {
-    height: 220px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: v.$purple-dark;
 }

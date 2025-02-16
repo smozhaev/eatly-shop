@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 
 export const ReusableButton: React.FC<ICustomButton> = ({
     children,
+    secondChildren,
     onClickFunction,
     buttonStyle,
 }) => {
@@ -12,6 +13,7 @@ export const ReusableButton: React.FC<ICustomButton> = ({
             onClick={onClickFunction}
         >
             <p className={styles.button__text}>{children}</p>
+            {secondChildren}
         </button>
     );
 };

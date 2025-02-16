@@ -1,0 +1,86 @@
+@use '@app/styles/variables' as v;
+
+.price_with_add_to_cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 13px;
+
+    &__text {
+        font-family: Manrope;
+        font-size: 25px;
+        font-weight: 600;
+        color: v.$heading-three;
+
+        &__span {
+            font-size: 18px;
+            color: #8e97a6;
+        }
+    }
+
+    &__button {
+        width: 43px;
+        height: 40px;
+        border-radius: 9px;
+        background-color: v.$heading-three;
+        color: #ffffff;
+        border: 1px solid v.$heading-three;
+        font-size: 30px;
+        transition: all 0.4s ease;
+        &:hover {
+            // border: 1px solid v.$purple-light;
+            // background-color: #ffffff;
+            // color: v.$purple-light;
+
+            border: 1px solid v.$purple-light;
+            background-color: v.$purple-light;
+            color: #ffffff;
+        }
+
+        &:active {
+            transform: scale(0.9);
+            border: 1px solid v.$purple-light;
+            background-color: #ffffff;
+            color: v.$purple-light;
+            filter: drop-shadow(0 0 0.3em v.$purple-light);
+        }
+    }
+}
+
+.add_to_cart {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: 20px;
+        height: 40px;
+    }
+
+    &__button {
+        width: 33px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: v.$heading-three;
+        color: #ffffff;
+        border: 1px solid v.$heading-three;
+        font-size: 20px;
+        transition: all 0.4s ease;
+        &:hover {
+            border: 1px solid v.$purple-light;
+            background-color: v.$purple-light;
+            color: #ffffff;
+        }
+
+        &:active {
+            transform: scale(0.9);
+            border: 1px solid v.$purple-light;
+            background-color: #ffffff;
+            color: v.$purple-light;
+            filter: drop-shadow(0 0 0.3em v.$purple-light);
+        }
+    }
+}

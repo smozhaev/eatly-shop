@@ -1,4 +1,4 @@
-import { SeparatopLine } from '@shared/ui/SeparatorLine';
+import { SeparatorLine } from '@shared/ui/SeparatorLine';
 import { AuthButtons } from '@features/AuthButtons';
 import styles from './styles.module.scss';
 import { Navigation } from '../Navigation';
@@ -13,7 +13,7 @@ export const Header = () => {
                     <Navigation />
                     <AuthButtons />
                 </div>
-                <SeparatopLine />
+                <SeparatorLine />
             </div>
         </header>
     );

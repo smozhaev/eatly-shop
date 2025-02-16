@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
 
-export const SeparatopLine = () => {
+export const SeparatorLine = () => {
     return <div className={styles.separator_line} />;
 };
