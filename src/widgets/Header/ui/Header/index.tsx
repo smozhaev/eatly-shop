@@ -1,8 +1,8 @@
-import { SeparatorLine } from '@shared/ui/SeparatorLine';
-import { AuthButtons } from '@features/AuthButtons';
+import { SeparatorLine } from '@shared/ui/separator-line';
+import { AuthButtons } from '@features/auth-buttons';
 import styles from './styles.module.scss';
-import { Navigation } from '../Navigation';
-import { AppLogo } from '../AppLogo';
+import { Navigation } from '../navigation';
+import { AppLogo } from '../app-logo';
 
 export const Header = () => {
     return (

@@ -1,5 +1,5 @@
-export { PageContainer } from './PageContainer/index';
-export { ReusableButton } from './ReusableButton/index';
-export { LogoLink } from './LogoLink/index';
-export { CustomIcon } from './CustomIcon/index';
-export { SeparatorLine } from './SeparatorLine/index';
+export { PageContainer } from './page-container/index';
+export { ReusableButton } from './reusable-button/index';
+export { LogoLink } from './logo-link/index';
+export { CustomIcon } from './custom-icon/index';
+export { SeparatorLine } from './separator-line/index';

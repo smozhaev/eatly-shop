@@ -1,9 +1,9 @@
-import { Blog } from '@pages/Blog';
-import { Contact } from '@pages/Contact';
-import { Home } from '@pages/Home';
-import { Menu } from '@pages/Menu';
-import { Pricing } from '@pages/Pricing';
-import { Profile } from '@pages/Profile';
+import { Blog } from '@pages/blog';
+import { Contact } from '@pages/contact';
+import { Home } from '@pages/home';
+import { Menu } from '@pages/menu';
+import { Pricing } from '@pages/pricing';
+import { Profile } from '@pages/profile';
 import { Route, Routes } from 'react-router';
 
 export const AppRouter = () => {

@@ -1,10 +1,10 @@
 import { PageContainer } from '@shared/ui';
 // import styles from './styles.module.scss';
-import { HeroSection } from '../HeroSection';
-import { Stats } from '../Stats';
-import { AboutMobile } from '../AboutMobile';
-import { TopRestaurant } from '../TopRestaurants';
-import { TopDishes } from '../TopDishes';
+import { HeroSection } from '../hero-section';
+import { Stats } from '../stats';
+import { AboutMobile } from '../about-mobile';
+import { TopRestaurant } from '../top-restaurants';
+import { TopDishes } from '../top-dishes';
 
 export const Home = () => {
     return (

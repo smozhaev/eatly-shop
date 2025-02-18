@@ -4,7 +4,7 @@ import foodImage1 from '@shared/assets/png/food-image-1.png';
 import foodImage2 from '@shared/assets/png/food-image-2.png';
 import foodImage3 from '@shared/assets/png/food-image-3.png';
 
-import { LikeProduct } from '@features/LikeProduct';
+import { LikeProduct } from '@features/like-product';
 import { PriceWithAddToCart } from '@features/price-with-add-to-cart';
 import { useId } from 'react';
 import { SeparatorLine } from '@shared/ui';
