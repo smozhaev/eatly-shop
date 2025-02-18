@@ -1,0 +1,58 @@
+@use '@app/styles/variables' as v;
+
+.price_with_add_to_cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 13px;
+
+    &__text {
+        max-width: 88px;
+        width: 100%;
+        font-family: Manrope;
+        font-size: 25px;
+        font-weight: 600;
+        color: v.$heading-three;
+
+        &__span {
+            font-size: 18px;
+            color: #8e97a6;
+        }
+    }
+
+    &__button {
+        width: 43px;
+        height: 40px;
+        border-radius: 9px;
+        font-size: 30px;
+        transition: all 0.4s ease;
+    }
+}
+
+.add_to_cart {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 130px;
+        width: 100%;
+        margin-left: 3px;
+        height: 40px;
+    }
+
+    &__button {
+        width: 33px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    &__count {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12.5;
+    }
+}

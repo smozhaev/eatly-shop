@@ -1,3 +1,4 @@
+import { PriceWithAddToCart } from '@features/price-with-add-to-cart';
 import styles from './styles.module.scss';
 import { SeparatorLine } from '@shared/ui';
 
@@ -27,6 +28,7 @@ export const TopRestaurant = () => {
                     <DishCard />
                 </li>
             </ul> */}
+            <PriceWithAddToCart price={20.35} />
             <SeparatorLine />
         </section>
     );

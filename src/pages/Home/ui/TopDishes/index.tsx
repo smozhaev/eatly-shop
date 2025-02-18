@@ -25,7 +25,7 @@ const dish = [
         name: 'Swe Dish',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie arcu dictum quam luctus egestas. Nullam id elementum quam. Vivamus nec arcu id nisl auctor scelerisque sit amet accumsan ipsum. Sed ac dolor et turpis volutpat fermentum. Donec non pulvinar justo. Etiam gravida posuere libero ac posuere. Suspendisse potenti. Aenean. ',
-        category: 'Healthy',
+        category: 'Supreme',
         price: 19.99,
         time: 20,
         rating: 4.9,
@@ -36,7 +36,7 @@ const dish = [
         name: 'Swe Dish',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie arcu dictum quam luctus egestas. Nullam id elementum quam. Vivamus nec arcu id nisl auctor scelerisque sit amet accumsan ipsum. Sed ac dolor et turpis volutpat fermentum. Donec non pulvinar justo. Etiam gravida posuere libero ac posuere. Suspendisse potenti. Aenean. ',
-        category: 'Healthy',
+        category: 'Trending',
         price: 15.99,
         time: 35,
         rating: 4.7,
@@ -58,7 +58,7 @@ const dish = [
         name: 'Swe Dish',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie arcu dictum quam luctus egestas. Nullam id elementum quam. Vivamus nec arcu id nisl auctor scelerisque sit amet accumsan ipsum. Sed ac dolor et turpis volutpat fermentum. Donec non pulvinar justo. Etiam gravida posuere libero ac posuere. Suspendisse potenti. Aenean. ',
-        category: 'Healthy',
+        category: 'Supreme',
         price: 12.99,
         time: 24,
         rating: 4.9,
@@ -83,13 +83,18 @@ export const TopDishes = () => {
                     const { color, backgroundColor } = getTagColors(
                         dish.category.toLowerCase()
                     );
-
+                    console.log(id);
                     return (
                         <li key={id}>
                             <DishCard
                                 topFeature={<LikeProduct />}
                                 bottomFeature={
-                                    <PriceWithAddToCart price={dish.price} />
+                                    <PriceWithAddToCart
+                                        price={dish.price}
+                                        addFunc={() => {}}
+                                        removeFunc={() => {}}
+                                        initialPrice={0}
+                                    />
                                 }
                                 categoryStyle={{ color, backgroundColor }}
                                 data={data}
