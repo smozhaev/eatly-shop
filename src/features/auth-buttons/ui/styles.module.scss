@@ -3,6 +3,7 @@
 .auth_buttons__container {
     display: flex;
     align-items: center;
+    width: 231px;
 }
 
 .button_login {
@@ -17,10 +18,14 @@
 }
 
 .button_profile__icon {
-    height: 35px;
 }
 
 .button_profile {
     padding: 8px 14px;
     border-radius: 16px;
+}
+
+.profile__icon {
+    height: 37px;
+    width: 37px;
 }

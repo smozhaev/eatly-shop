@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import styles from './styles.module.scss';
-import { HeartSvg } from '@shared/assets/svg/HeartSvg';
+import { HeartSvg } from '@shared/ui/svg-components/HeartSvg';
 
 export const LikeProduct = () => {
-    const [liked, setLiked] = useState(false);
+    const [like, setLike] = useState(false);
 
     return (
-        <button onClick={() => setLiked(!liked)} className={styles.heart}>
-            <HeartSvg red={liked} />
+        <button onClick={() => setLike(!like)} className={styles.heart}>
+            <HeartSvg red={like} />
         </button>
     );
 };

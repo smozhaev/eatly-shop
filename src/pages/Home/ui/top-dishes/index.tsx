@@ -93,7 +93,6 @@ export const TopDishes = () => {
                                         price={dish.price}
                                         addFunc={() => {}}
                                         removeFunc={() => {}}
-                                        initialPrice={0}
                                     />
                                 }
                                 categoryStyle={{ color, backgroundColor }}

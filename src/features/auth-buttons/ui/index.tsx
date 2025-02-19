@@ -1,8 +1,8 @@
-import { ReusableButton, CustomIcon } from '@shared/ui';
+import { ReusableButton } from '@shared/ui';
 import styles from './styles.module.scss';
-import userIcon from '@shared/assets/svg/user-l.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { ProfileSVG } from '@shared/ui/svg-components/ProfileSVG';
 
 export const AuthButtons = () => {
     const [authState, setAuthState] = useState(false);
@@ -26,10 +26,7 @@ export const AuthButtons = () => {
                         onClickFunction={() => navigate('/profile')}
                         buttonStyle={styles.button_profile}
                     >
-                        <CustomIcon
-                            iconSrc={userIcon} // надо будет реализовать перекрашивание иконки профиля
-                            iconCustomStyle={styles.button_profile__icon}
-                        />
+                        <ProfileSVG style={styles.profile__icon} />
                     </ReusableButton>
                 </>
             ) : (

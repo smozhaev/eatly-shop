@@ -4,10 +4,6 @@ export interface IPriceWithAddToCart {
     removeFunc?: () => void;
 }
 
-export interface IPriceWithAddToCart {
-    initialPrice: number;
-}
-
 export interface PriceCartState {
     price: number;
     count: number;

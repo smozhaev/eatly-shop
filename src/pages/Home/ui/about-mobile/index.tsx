@@ -1,8 +1,8 @@
 import { ReusableButton } from '@shared/ui';
 import styles from './styles.module.scss';
 import mobileScreen from '@shared/assets/png/mobile-screen.png';
-import downloadIcon from '@shared/assets/svg/arrow-right.svg';
 import { SeparatorLine } from '@shared/ui/separator-line';
+import { ArrowSvg } from '@shared/ui/svg-components/ArrowSvg';
 
 export const AboutMobile = () => {
     return (
@@ -41,7 +41,7 @@ export const AboutMobile = () => {
                     <ReusableButton
                         onClickFunction={() => {}}
                         buttonStyle={styles.mobile__download}
-                        secondChildren={<img src={downloadIcon}></img>}
+                        secondChildren={<ArrowSvg />}
                     >
                         Download
                     </ReusableButton>
