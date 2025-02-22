@@ -1,0 +1,22 @@
+.delivery_and_raiting {
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+
+    &__time {
+        font-family: Manrope;
+        font-size: 18px;
+        font-weight: 400;
+        color: #8e97a6;
+    }
+}

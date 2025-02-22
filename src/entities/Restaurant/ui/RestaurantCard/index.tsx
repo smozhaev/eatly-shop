@@ -1,30 +1,29 @@
 import styles from './styles.module.scss';
-import { IDishCard } from '../../model/types';
+import { IRestaurantCard } from '../../model/types';
 import { CardWrapper, CategoryElement, DeliveryAndRaiting } from '@shared/ui';
 
-export const DishCard: React.FC<IDishCard> = ({
-    topFeature,
+export const RestaurantCard: React.FC<IRestaurantCard> = ({
     bottomFeature,
     categoryStyle,
     data,
 }) => {
     return (
         <CardWrapper>
-            {topFeature}
-            <div className={styles.dish_card__image_container}>
+            <div className={styles.restaurant_card__image_container}>
                 <img
-                    className={styles.dish_card__image}
+                    className={styles.restaurant_card__image}
                     src={data.image}
                     alt=""
                 />
             </div>
-            <div className={styles.dish_card__container}>
+            <div className={styles.restaurant_card__container}>
                 <CategoryElement
                     category={data.category}
                     categoryStyle={categoryStyle}
                 />
-                <p className={styles.dish_card__name}>{data.name}</p>
                 <DeliveryAndRaiting time={data.time} rating={data.rating} />
+                <p className={styles.restaurant_card__name}>{data.name}</p>
+
                 {bottomFeature}
             </div>
         </CardWrapper>

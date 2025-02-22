@@ -3,7 +3,7 @@ import { TopDishes } from '@widgets/top-dishes';
 import { HeroSection } from '../hero-section';
 import { Stats } from '../stats';
 import { AboutMobile } from '../about-mobile';
-import { TopRestaurant } from '../top-restaurants';
+import { TopRestaurants } from '@widgets/top-restaurants';
 
 export const Home = () => {
     return (
@@ -11,7 +11,7 @@ export const Home = () => {
             <HeroSection />
             <Stats />
             <AboutMobile />
-            <TopRestaurant />
+            <TopRestaurants />
             <TopDishes />
         </PageContainer>
     );

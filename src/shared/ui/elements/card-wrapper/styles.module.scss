@@ -1,0 +1,24 @@
+@use '@app/styles/variables' as v;
+@use '@app/styles/mixins' as m;
+
+.card_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    list-style-type: none;
+    background-color: v.$white;
+    border-radius: 34px;
+    width: 224.63px;
+    height: 390px;
+    // height: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    will-change: transform;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { IDishData } from '@entities/Dish';
 import { MOCK_DISH_DATA } from '@shared/const';
-// Моковые данные
 
 export const useTopDishes = () => {
     const [dishes, setDishes] = useState<IDishData[]>([]);
@@ -12,7 +11,7 @@ export const useTopDishes = () => {
             const dishes = MOCK_DISH_DATA;
             setDishes(dishes);
             setLoading(false);
-        }, 1000); // Имитация задержки загрузки 1 сек
+        }, 1000);
     }, []);
 
     return { dishes, loading };

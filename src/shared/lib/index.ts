@@ -1,0 +1,1 @@
+export { getTagColors } from './helpers';
