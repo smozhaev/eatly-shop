@@ -1,1 +1,1 @@
-export { LikeProduct } from './ui'
+export { LikeProduct } from './ui';

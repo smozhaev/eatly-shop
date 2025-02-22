@@ -1,6 +1,6 @@
 import starPurple from '@shared/assets/svg/star-p.svg';
 import styles from './styles.module.scss';
-import { IDishCard } from './types';
+import { IDishCard } from '../../model/types';
 
 export const DishCard: React.FC<IDishCard> = ({
     topFeature,

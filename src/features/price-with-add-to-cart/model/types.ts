@@ -23,4 +23,3 @@ export interface PriceDisplayProps {
     dollars: number;
     cents: string;
 }
-
