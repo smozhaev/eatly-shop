@@ -8,6 +8,7 @@ import { LikeProduct } from '@features/like-product';
 import { PriceWithAddToCart } from '@features/price-with-add-to-cart';
 import { useId } from 'react';
 import { SeparatorLine } from '@shared/ui';
+import { ViewAllButton } from '@features/view-all-button';
 
 const dish = [
     {
@@ -102,6 +103,11 @@ export const TopDishes = () => {
                     );
                 })}
             </ul>
+
+            <div className={styles.view_all__container}>
+                <ViewAllButton link="/menu" />
+            </div>
+
             <SeparatorLine />
         </section>
     );

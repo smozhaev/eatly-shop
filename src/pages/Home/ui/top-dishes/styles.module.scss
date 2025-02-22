@@ -22,10 +22,21 @@
 
     &__list {
         width: 100%;
+        margin: 53px 0px 47px 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         list-style-type: none;
     }
+}
+
+.view_all__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 85px;
 }

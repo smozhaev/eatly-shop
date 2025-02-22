@@ -17,4 +17,3 @@ export const ReusableButton: React.FC<ICustomButton> = ({
         </button>
     );
 };
-// поправить эфект при клике на кнопку
