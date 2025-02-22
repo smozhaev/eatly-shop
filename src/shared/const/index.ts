@@ -1,1 +1,2 @@
-export { tagsColors } from './tags-colors/TAGS_COLORS';
+export { tagsColors } from './colors/tagsColors';
+export { MOCK_DISH_DATA } from './mocks/mockDishData';

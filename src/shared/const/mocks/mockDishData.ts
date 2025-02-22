@@ -1,15 +1,8 @@
-import { DishCard, getTagColors, pickDishData } from '@entities/Dish';
-import styles from './styles.module.scss';
 import foodImage1 from '@shared/assets/png/food-image-1.png';
 import foodImage2 from '@shared/assets/png/food-image-2.png';
 import foodImage3 from '@shared/assets/png/food-image-3.png';
 
-import { LikeProduct } from '@features/like-product';
-import { PriceWithAddToCart } from '@features/price-with-add-to-cart';
-import { SeparatorLine } from '@shared/ui';
-import { ViewAllButton } from '@features/view-all-button';
-
-const dish = [
+export const MOCK_DISH_DATA = [
     {
         id: '553d327a-57b2-4359-b054-fc11bb0e563c',
         name: 'Chiken Hell',
@@ -71,47 +64,3 @@ const dish = [
         image: foodImage2,
     },
 ];
-
-export const TopDishes = () => {
-    return (
-        <section className={styles.top_restaurants}>
-            <h3 className={styles.top_restaurants__title}>
-                Our Top{' '}
-                <span className={styles.top_restaurants__title__span}>
-                    Dishes
-                </span>
-            </h3>
-            <ul className={styles.top_restaurants__list}>
-                {dish.map((dish) => {
-                    const pickedData = pickDishData(dish);
-                    const { color, backgroundColor } = getTagColors(
-                        dish.category.toLowerCase()
-                    );
-
-                    return (
-                        <li key={dish.id}>
-                            <DishCard
-                                topFeature={<LikeProduct />}
-                                bottomFeature={
-                                    <PriceWithAddToCart
-                                        price={dish.price}
-                                        addFunc={() => {}}
-                                        removeFunc={() => {}}
-                                    />
-                                }
-                                categoryStyle={{ color, backgroundColor }}
-                                data={pickedData}
-                            />
-                        </li>
-                    );
-                })}
-            </ul>
-
-            <div className={styles.view_all__container}>
-                <ViewAllButton link="/menu" />
-            </div>
-
-            <SeparatorLine />
-        </section>
-    );
-};
