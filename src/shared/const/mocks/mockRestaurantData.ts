@@ -1,5 +1,4 @@
 import RestaurantImage1 from '@shared/assets/png/restaurant-1.png';
-import RestaurantImage2 from '@shared/assets/png/restaurant-2.png';
 
 export const MOCK_RESTAURANT_DATA = [
     {
@@ -20,7 +19,7 @@ export const MOCK_RESTAURANT_DATA = [
         category: 'Supreme',
         time: 20,
         rating: 4.9,
-        image: RestaurantImage2,
+        image: RestaurantImage1,
     },
     {
         id: '5f179117-6df9-z0v8-9ef2-81417f192fc3',

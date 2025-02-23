@@ -8,7 +8,7 @@ export const RestaurantCard: React.FC<IRestaurantCard> = ({
     data,
 }) => {
     return (
-        <CardWrapper>
+        <CardWrapper width="396px">
             <div className={styles.restaurant_card__image_container}>
                 <img
                     className={styles.restaurant_card__image}
@@ -21,10 +21,11 @@ export const RestaurantCard: React.FC<IRestaurantCard> = ({
                     category={data.category}
                     categoryStyle={categoryStyle}
                 />
-                <DeliveryAndRaiting time={data.time} rating={data.rating} />
                 <p className={styles.restaurant_card__name}>{data.name}</p>
-
-                {bottomFeature}
+                <div className={styles.restaurant_card__features_container}>
+                    <DeliveryAndRaiting time={data.time} rating={data.rating} />
+                    {bottomFeature}
+                </div>
             </div>
         </CardWrapper>
     );

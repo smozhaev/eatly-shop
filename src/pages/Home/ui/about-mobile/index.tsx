@@ -1,8 +1,8 @@
 import { ReusableButton } from '@shared/ui';
 import styles from './styles.module.scss';
 import mobileScreen from '@shared/assets/png/mobile-screen.png';
-import { SeparatorLine } from '@shared/ui/separator-line';
-import { ArrowSvg } from '@shared/ui/svg-components/ArrowSvg';
+import { SeparatorLine } from '@shared/ui/elements/separator-line';
+import { ArrowSvg } from '@shared/ui/icon-components/ArrowSvg';
 
 export const AboutMobile = () => {
     return (

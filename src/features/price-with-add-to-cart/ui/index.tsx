@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import { AddButton } from '@shared/ui/add-button';
+import { AddButton } from '@shared/ui/buttons/add-button';
 import { IPriceWithAddToCart } from '../model/types';
 import { usePriceWithCart } from '../model/usePriceWithCard';
 

@@ -2,7 +2,7 @@ import { ReusableButton } from '@shared/ui';
 import styles from './styles.module.scss';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { ProfileSVG } from '@shared/ui/svg-components/ProfileSVG';
+import { ProfileSVG } from '@shared/ui/icon-components/ProfileSVG';
 
 export const AuthButtons = () => {
     const [authState, setAuthState] = useState(false);

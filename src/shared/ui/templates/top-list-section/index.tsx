@@ -1,5 +1,5 @@
-import { ViewAllButton } from '@features/view-all-button';
-import { SeparatorLine } from '../separator-line';
+import { ViewAllButton } from '@shared/ui/buttons/view-all-button';
+import { SeparatorLine } from '../../elements/separator-line';
 import styles from './styles.module.scss';
 import { ITopListSectionProps } from './types';
 

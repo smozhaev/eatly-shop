@@ -1,6 +1,6 @@
-import { IRestauranthData, IPickedRestaurantData } from '../../model/types';
+import { IRestaurantData, IPickedRestaurantData } from '../../model/types';
 export const pickRestaurantData = (
-    restaurant: IRestauranthData
+    restaurant: IRestaurantData
 ): IPickedRestaurantData => ({
     image: restaurant.image,
     name: restaurant.name,
