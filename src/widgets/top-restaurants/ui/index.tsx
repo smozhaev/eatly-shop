@@ -2,6 +2,7 @@ import { RestaurantCard } from '@entities/Restaurant';
 import { TopListSection } from '@shared/ui';
 import { useTopRestaurants } from '../model/useTopRestaurants';
 import { useProcessedTopRestaurants } from '../model/useProcessedTopRestaurants';
+import { SaveRestaurant } from '@features/save-restaurant/ui';
 
 export const TopRestaurants = () => {
     const { restaurants, loading } = useTopRestaurants();
@@ -19,7 +20,7 @@ export const TopRestaurants = () => {
                         return (
                             <li key={id}>
                                 <RestaurantCard
-                                    bottomFeature={<button>save</button>}
+                                    bottomFeature={<SaveRestaurant />}
                                     categoryStyle={{
                                         color,
                                         backgroundColor,
