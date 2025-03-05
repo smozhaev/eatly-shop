@@ -20,7 +20,12 @@ export const TopRestaurants = () => {
                         return (
                             <li key={id}>
                                 <RestaurantCard
-                                    bottomFeature={<SaveRestaurant />}
+                                    bottomFeature={
+                                        <SaveRestaurant
+                                            savedId={id}
+                                            initialState={false}
+                                        />
+                                    }
                                     categoryStyle={{
                                         color,
                                         backgroundColor,
