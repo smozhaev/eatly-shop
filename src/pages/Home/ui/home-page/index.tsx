@@ -4,6 +4,7 @@ import { HeroSection } from '../hero-section';
 import { Stats } from '../stats';
 import { AboutMobile } from '../about-mobile';
 import { TopRestaurants } from '@widgets/top-restaurants';
+import { SneakPeekPurshsases } from '../sneak-peek-purshases';
 
 export const Home = () => {
     return (
@@ -13,6 +14,7 @@ export const Home = () => {
             <AboutMobile />
             <TopRestaurants />
             <TopDishes />
+            <SneakPeekPurshsases />
         </PageContainer>
     );
 };

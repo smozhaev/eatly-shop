@@ -1,0 +1,77 @@
+@use '@app/styles/variables' as v;
+@use '@app/styles/mixins' as m;
+
+.sneak_peek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1248px;
+    width: 100%;
+    margin-top: 103px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 120px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-family: Poppins;
+        font-size: 50px;
+        font-weight: 700;
+        color: v.$heading-two;
+        line-height: 1.2;
+    }
+    &__span {
+        color: v.$purple-light;
+    }
+    &__cards {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        gap: 15px;
+    }
+    &__card {
+        width: 345px;
+        height: 88px;
+        &_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 88px;
+        }
+        &_time {
+            margin: 0px 15px 13px 0px;
+            align-self: self-end;
+            color: #acadb9;
+        }
+    }
+
+    &__image_container {
+        width: 79px;
+        height: 79px;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.dropdown_controlled_widget {
+    width: 534px;
+    height: 466px;
+}

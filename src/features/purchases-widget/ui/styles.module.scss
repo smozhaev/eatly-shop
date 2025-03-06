@@ -1,0 +1,173 @@
+.dropdown_controlled_widget {
+    &__body {
+        width: 534px;
+        height: 466px;
+    }
+}
+
+.purchases_widget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 466px;
+    background: #fff;
+    padding: 37px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    // max-width: 400px;
+    font-family: Arial, sans-serif;
+    gap: 12px;
+}
+
+.widget_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h2 {
+        font-family: Manrope;
+        font-weight: 900;
+        font-size: 29px;
+    }
+}
+
+// Дропдаун
+.dropdown {
+    position: relative;
+    cursor: pointer;
+
+    .dropdown_btn {
+        font-family: Manrope;
+        font-weight: 500;
+        font-size: 18px;
+        color: #1a202c;
+        background: #f6f6f6;
+        width: 175px;
+        height: 53px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .dropdown_menu {
+        position: absolute;
+        top: 100%;
+        width: 175px;
+
+        right: 0;
+        background: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 120px;
+        display: block;
+        z-index: 10;
+        list-style-type: none;
+
+        li {
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            &:hover {
+                background: #f0f0f0;
+            }
+        }
+    }
+}
+
+// Карточки
+.purchase_card {
+    background: #ffffff;
+    padding: 25px 25px 16px 25px;
+    border-radius: 12px;
+    border: solid 3px #edf2f7;
+    display: flex;
+    align-items: start;
+    height: 135px;
+    position: relative;
+}
+
+.icon_circle .info .amount {
+    margin-top: 25px;
+}
+
+.icon_circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.purple_bg {
+    background: #e0d3fc;
+    color: #6c43e0;
+}
+
+.green_bg {
+    background: #d3fce0;
+    color: #43e06c;
+}
+
+.info {
+    flex: 1;
+    margin-left: 12px;
+
+    .title {
+        font-family: Manrope;
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    .subtext {
+        font-family: Manrope;
+        font-weight: 600;
+        font-size: 12px;
+        color: gray;
+    }
+}
+
+.amount {
+    font-family: Manrope;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+// Прогресс-бары
+.progress_bar {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+    height: 9px;
+    background: #e6e6e6;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    .progress {
+        height: 100%;
+        border-radius: 4px;
+    }
+
+    .purple {
+        background: #6c43e0;
+    }
+
+    .yellow {
+        background: #e0a243;
+    }
+}

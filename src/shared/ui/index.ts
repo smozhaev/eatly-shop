@@ -7,5 +7,11 @@ export {
     DeliveryAndRaiting,
 } from './elements/';
 export { ReusableButton, AddButton, ViewAllButton } from './buttons/';
-export { HeartSvg, ProfileSVG, ArrowSvg, CustomIcon } from './icon-components';
+export {
+    HeartSvg,
+    ProfileSVG,
+    ArrowSvg,
+    CustomIcon,
+    ArrowToggleSvg,
+} from './icon-components';
 export { TopListSection } from './templates/';
