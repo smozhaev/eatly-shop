@@ -1,0 +1,36 @@
+@use '@app/styles/typography';
+@use '@app/styles/variables' as v;
+
+.navigation {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 458px;
+
+    &__list {
+        width: 374px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__link {
+        margin-left: 54px;
+        border-bottom: 0 solid transparent;
+        transition: border-bottom 0.2s ease;
+        &_active {
+            transition: all 0.1s ease;
+            color: v.$link-hover;
+            padding-bottom: 5px;
+            border-bottom: 2px solid v.$link-hover;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '@app/styles/variables' as v;
+
+.button {
+    padding: 17px 26px;
+    border-radius: 17.83px;
+    border: solid v.$purple-light 1px;
+    background-color: v.$purple-light;
+    color: v.$dark-white;
+    transition: all 0.7s ease;
+    stroke: v.$white;
+
+    &:hover {
+        transition: all 0.4s ease;
+        background-color: v.$dark-white;
+        color: v.$purple-light;
+        stroke: v.$purple-light;
+    }
+
+    &:active {
+        transform: scale(0.95);
+        filter: drop-shadow(0 0 0.5em v.$purple-light);
+    }
+
+    &__text {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0;
+    }
+}

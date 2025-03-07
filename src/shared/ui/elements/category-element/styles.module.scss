@@ -1,0 +1,10 @@
+@use '@app/styles/variables' as v;
+
+.category_element {
+    font-family: Poppins;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: v.$text-grey;
+    background-color: v.$blue-grey;
+}

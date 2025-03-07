@@ -1,7 +1,0 @@
-@use '@app/styles/variables' as v;
-
-.headingText {
-    color: v.$link-color;
-    user-select: none; /* Отключает выделение текста */
-    cursor: default;
-}

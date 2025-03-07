@@ -1,0 +1,83 @@
+@use '@app/styles/variables.scss' as v;
+
+.testimonials {
+    text-align: center;
+    max-width: 1248px;
+
+    margin: 116px 0px 0px 0px;
+    &__title {
+        font-family: Poppins;
+        font-size: 50px;
+        font-weight: 700;
+        color: v.$heading-two;
+        line-height: 1.2;
+        &__span {
+            color: v.$purple-light;
+        }
+    }
+}
+
+.swiper {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    width: 1200px;
+}
+
+.slide {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.quote {
+    font-style: italic;
+    color: #444;
+}
+
+.rating {
+    color: #ff9800;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.activeAuthor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.years {
+    font-size: 14px;
+    color: gray;
+}
+
+.swiper {
+    padding-bottom: 40px;
+
+    /* Точки пагинации */
+}
+
+:root {
+    --swiper-theme-color: #7b5cf0;
+}
+
+.swiper-pagination {
+    text-align: end;
+}

@@ -1,0 +1,9 @@
+@use '@app/styles/variables' as v;
+@use '@app/styles/mixins' as m;
+
+.page_container {
+    @include m.flex-center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+}

@@ -1,0 +1,45 @@
+@use '@app/styles/variables.scss' as v;
+
+.top_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1248px;
+    width: 100%;
+    margin: 100px 0px 0px 0px;
+
+    &__title {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 45px;
+        color: v.$heading-three;
+
+        &__span {
+            color: v.$purple-light;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 1248px;
+        margin: 33px 0px 27px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 30.65px;
+        padding: 20px 0px;
+    }
+}
+
+.view_all__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 85px;
+}

@@ -1,0 +1,1 @@
+export { PriceWithAddToCart } from './ui';
