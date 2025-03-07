@@ -48,8 +48,11 @@ export const Testimonials = () => {
 
     return (
         <div className={styles.testimonials}>
-            <h2 className={styles.title}>
-                Customer <span>Say</span>
+            <h2 className={styles.testimonials__title}>
+                <span className={styles.testimonials__title__span}>
+                    Customer
+                </span>{' '}
+                Say
             </h2>
 
             <Swiper
@@ -89,9 +92,8 @@ export const Testimonials = () => {
                         </div>
                     </SwiperSlide>
                 ))}
+                <div className={styles.swiper_pagination}></div>
             </Swiper>
-
-            {/* Блок с автором активного отзыва */}
         </div>
     );
 };

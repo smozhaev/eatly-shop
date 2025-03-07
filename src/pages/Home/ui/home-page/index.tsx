@@ -6,6 +6,7 @@ import { AboutMobile } from '../about-mobile';
 import { TopRestaurants } from '@widgets/top-restaurants';
 import { SneakPeekPurshsases } from '../sneak-peek-purshases';
 import { Testimonials } from '../testimonials';
+import { GetDiscount } from '../get-discount';
 
 export const Home = () => {
     return (
@@ -17,6 +18,7 @@ export const Home = () => {
             <TopDishes />
             <SneakPeekPurshsases />
             <Testimonials />
+            <GetDiscount />
         </PageContainer>
     );
 };
